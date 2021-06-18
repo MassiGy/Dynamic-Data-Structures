@@ -2,10 +2,13 @@
 Program recursive;
 
 
+//* declare some types and variables for the code below!
+
 
 Type container = array [1..4] Of integer;
-
 Var arr , tmp : container;
+
+
 
 Function factorial(num : integer): integer;
 
@@ -83,26 +86,6 @@ begin
     j:=length(query);
     findStr:=strfinder(chain,query, i,j);
 end;
-
-
-
-// Procedure strOccurence(chain, query: string; var resault:integer);
-// var i, j : integer;
-
-// Begin
-// if(findStr(chain,query) = -1) then break
-// else  
-//     Begin
-//         resault:=resault+1;
-//         i:=findStr(chain,query)+ length(query);
-//         j:=length(chain);
-//         chain:=subStr(chain, i, j);
-//         strOccurence(chain,query, resault);
-//     end;
- 
-      
-// end;
-
 
 Function max (x, y : integer): integer;
 Begin
@@ -235,7 +218,8 @@ End;
 //*Main program
 
 Begin
-  writeln(findStr('this is it', 'is'));
+//* Run every methode you want!
 
-  readln;
+
+
 End.
