@@ -363,14 +363,17 @@ end;
 //* Main program //
 
 begin
+  writeln('filling the tree');
   inserterV2(head,10);
   inserterV2(head,6);
   inserterV2(head,3);
   inserterV2(head,8);
   inserterV2(head,15);
   inserterV2(head,20);
+
+  //* Run any function you want
   visulizeTree(head, 2);
-  //displayer(head);
+  displayer(head);
   readln;
 End.
 
