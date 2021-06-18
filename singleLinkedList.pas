@@ -175,24 +175,7 @@ Function insert(Var head , after: node; el : node ): fnReturn;
 Var tmp: node;
 Begin
   tmp := Nil;
-  If ((head = Nil) Or (searcher(head,after) = Nil) ) Then writeln(
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                              'Refrence Error/ list head is nil or after is not include in the list'
-    )
+  If ((head = Nil) Or (searcher(head,after) = Nil) ) Then writeln('Refrence Error/ list head is nil or after is not include in the list')
   Else
     Begin
       tmp := after^.next;
@@ -201,22 +184,6 @@ Begin
       new(insert);
       insert^.child := Nil;
       insert^.value := listLengthCounter(head);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Note : we've could use the searcher(head,after) value to gain the memory space reserved for tmp; 
     End;
 End;
@@ -229,24 +196,7 @@ Var tmp, elToRemove: node;
   count: integer;
 Begin
   tmp := Nil;
-  If ((head = Nil) Or (searcher(head, after) = Nil) ) Then writeln(
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                       'Refrence Error/ list empty or the splice startup element is not include in '
-    )
+  If ((head = Nil) Or (searcher(head, after) = Nil) ) Then writeln('Refrence Error/ list empty or the splice startup element is not include in ')
   Else
     Begin
       If (elCount =1) Then
@@ -271,20 +221,6 @@ Begin
           elToRemove^.next := Nil;
 
         End;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Note : we've could use the value of the searcherV2 function to gain the reserved space for tmp or elToRemove variables
       new(splice);
       splice^.child := elToRemove;
@@ -300,24 +236,7 @@ Var elToReplace: node;
 
 Begin
 
-  If ((head = Nil) Or (searcher(head, after) = Nil) ) Then writeln(
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                       'Refrence Error/ list empty or the splice startup element is not include in '
-    )
+  If ((head = Nil) Or (searcher(head, after) = Nil) ) Then writeln('Refrence Error/ list empty or the splice startup element is not include in '  )
   Else
     Begin
       elToReplace := searcher(head, after)^.next;
@@ -516,10 +435,7 @@ Begin
   readln(limit);
   While (listLengthCounter(head) < limit) Do
     fillerOnButtom(head);
-  writeln('this is for the second list');
-  nodeMaker(element);
-  o_mergeV2(head,element);
-  writeln('befor the displayer');
+  //* Run every function you want!
   displayer(head);
   readln;
 End.
