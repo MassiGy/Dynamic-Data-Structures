@@ -190,6 +190,8 @@ end;
 
 
 begin
+//* This program is here to semulate how a day in the medical Cabinet happens
+//* Built with dynamic programing and Dynamic Data structure: queues and singleLinkedLists
 randomize;
 
 medProcess(false);
